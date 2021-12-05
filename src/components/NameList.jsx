@@ -3,7 +3,7 @@ import Person from './Person'
 
 function NameList() {
 
-    const names = ['Stark', 'Thor', 'Rogers', 'Banner']
+    const names = ['Stark', 'Thor', 'Rogers', 'Banner', 'Aas', 'Hussain']
     // const persons = [
     //     {
     //         id: 1,
