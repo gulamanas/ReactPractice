@@ -9,13 +9,17 @@ import UserGreeting from './components/UserGreeting';
 import NameList from './components/NameList';
 import Stylesheet from './components/Stylesheet';
 import Inline from './components/Inline';
+import './appStyle.css'
+import styles from './appStyle.module.css'
 
 
 function App() {
   return (
     <div className="App ">
       <div className="bg-purple-600">
-        <Inline />
+        <h1 className='error'>Error</h1>
+        <h1 className={styles.success}>Success</h1>
+        {/* <Inline /> */}
         {/* <Stylesheet primary={true} /> */}
         {/* <NameList /> */}
         {/* <UserGreeting /> */}
