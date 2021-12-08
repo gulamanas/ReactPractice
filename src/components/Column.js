@@ -2,10 +2,12 @@ import React from 'react'
 
 function Column() {
     return (
-        <div>
+        // You can either add React.Fragment or you can left it as it is
+        // The only prolem will be you cannot be able to add key attribute
+        <>
             <td>Hello</td>
             <td>Someone</td>
-        </div>
+        </>
     )
 }
 
