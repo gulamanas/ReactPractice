@@ -14,12 +14,14 @@ import styles from './appStyle.module.css'
 import Form from './components/Form';
 import LifeCycleA from './components/LifeCycleA';
 import Fragment from './components/Fragment';
+import Table from './components/Table';
 
 
 function App() {
   return (
     <div className="App ">
-      <Fragment />
+      <Table />
+      {/* <Fragment /> */}
       {/* <LifeCycleA /> */}
       {/* <Form /> */}
       {/* <h1 className='error'>Error</h1>
