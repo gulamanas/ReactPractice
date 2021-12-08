@@ -4,7 +4,7 @@ function Fragment() {
     return (
         <React.Fragment>
             <h1>React Fragment</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, nostrum!</p>
+            <p>This describes the Fragment demo components</p>
         </React.Fragment>
     )
 }
