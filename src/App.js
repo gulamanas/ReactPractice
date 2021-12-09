@@ -15,12 +15,14 @@ import Form from './components/Form';
 import LifeCycleA from './components/LifeCycleA';
 import Fragment from './components/Fragment';
 import Table from './components/Table';
+import ParentComp from './components/ParentComp';
 
 
 function App() {
   return (
     <div className="App ">
-      <Table />
+      <ParentComp />
+      {/* <Table /> */}
       {/* <Fragment /> */}
       {/* <LifeCycleA /> */}
       {/* <Form /> */}
