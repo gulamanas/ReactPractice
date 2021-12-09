@@ -23,8 +23,8 @@ export class ParentComp extends Component {
         return (
             <div>
                 Parent Component
-                <PureComp />
-                <RegComp />
+                <PureComp name={this.state.name} />
+                <RegComp name={this.state.name} />
             </div>
         )
     }
