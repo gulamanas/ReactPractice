@@ -2,25 +2,13 @@ import React, { Component } from 'react'
 import UpdatedComponent from './withCounter'
 
 export class ClickCounter extends Component {
-    constructor(props) {
-        super(props)
 
-        this.state = {
-            count: 0
-        }
-    }
-
-    countHandler = () => {
-        this.setState(prevState => {
-            return { count: prevState.count + 1 }
-        })
-    }
 
     render() {
-        const { count } = this.state
+        const { count, countHandler } = this.props
         return (
             <div>
-                <button onClick={this.countHandler}>{this.props.name} Click {count} times</button>
+                <button onClick={countHandler}>Click {count} times</button>
             </div>
         )
     }
