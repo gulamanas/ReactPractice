@@ -1,24 +1,10 @@
 import React, { Component } from 'react'
 
 class HoverCounterTwo extends Component {
-    constructor(props) {
-        super(props)
-
-        this.state = {
-            count: 0
-        }
-    }
-
-    clickHandler = () => {
-        this.setState(prevState => {
-            return { count: prevState.count + 1 }
-        })
-    }
-
     render() {
-        const { count } = this.state
+        const { count, clickHandler } = this.props
         return (
-            <h1 onMouseEnter={this.clickHandler}>Hover {count} times</h1>
+            <h1 onMouseEnter={clickHandler}>Hover {count} times</h1>
         )
     }
 }

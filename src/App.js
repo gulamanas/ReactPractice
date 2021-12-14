@@ -25,13 +25,20 @@ import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
 import ClickCounterTwo from './components/ClickCounterTwo';
 import HoverCounterTwo from './components/HoverCounterTwo';
+import MainCounter from './components/MainCounter';
 
 
 function App() {
   return (
     <div className="App ">
-      <ClickCounterTwo />
-      <HoverCounterTwo />
+      <MainCounter render={(count, clickHandler) => (
+        <ClickCounterTwo count={count} clickHandler={clickHandler} />
+      )} />
+      <MainCounter render={(count, clickHandler) => (
+        <HoverCounterTwo count={count} clickHandler={clickHandler} />
+      )} />
+      {/* <ClickCounterTwo />
+      <HoverCounterTwo /> */}
       {/* <ClickCounter name="Jayaprakash" />
       <HoverCounter /> */}
       {/* <ErrorBoundary>
