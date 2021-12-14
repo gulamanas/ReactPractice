@@ -31,12 +31,16 @@ import MainCounter from './components/MainCounter';
 function App() {
   return (
     <div className="App ">
-      <MainCounter render={(count, clickHandler) => (
-        <ClickCounterTwo count={count} clickHandler={clickHandler} />
-      )} />
-      <MainCounter render={(count, clickHandler) => (
-        <HoverCounterTwo count={count} clickHandler={clickHandler} />
-      )} />
+      <MainCounter>
+        {(count, clickHandler) => (
+          <ClickCounterTwo count={count} clickHandler={clickHandler} />
+        )}
+      </MainCounter>
+      <MainCounter>
+        {(count, clickHandler) => (
+          <HoverCounterTwo count={count} clickHandler={clickHandler} />
+        )}
+      </MainCounter>
       {/* <ClickCounterTwo />
       <HoverCounterTwo /> */}
       {/* <ClickCounter name="Jayaprakash" />

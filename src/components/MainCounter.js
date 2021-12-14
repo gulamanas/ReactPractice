@@ -18,7 +18,7 @@ class MainCounter extends Component {
     render() {
         return (
             <div>
-                {this.props.render(this.state.count, this.clickHandler)}
+                {this.props.children(this.state.count, this.clickHandler)}
             </div>
         )
     }
