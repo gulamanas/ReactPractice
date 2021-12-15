@@ -27,12 +27,15 @@ import ClickCounterTwo from './components/ClickCounterTwo';
 import HoverCounterTwo from './components/HoverCounterTwo';
 import MainCounter from './components/MainCounter';
 import ComponentC from './components/ComponentC';
+import { UserProvider } from './components/userContext';
 
 
 function App() {
   return (
     <div className="App ">
-      <ComponentC />
+      <UserProvider value="Jayaprakash">
+        <ComponentC />
+      </UserProvider>
       {/* <MainCounter>
         {(count, clickHandler) => (
           <ClickCounterTwo count={count} clickHandler={clickHandler} />
