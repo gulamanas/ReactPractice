@@ -26,21 +26,23 @@ import HoverCounter from './components/HoverCounter';
 import ClickCounterTwo from './components/ClickCounterTwo';
 import HoverCounterTwo from './components/HoverCounterTwo';
 import MainCounter from './components/MainCounter';
+import ComponentC from './components/ComponentC';
 
 
 function App() {
   return (
     <div className="App ">
-      <MainCounter>
+      <ComponentC />
+      {/* <MainCounter>
         {(count, clickHandler) => (
           <ClickCounterTwo count={count} clickHandler={clickHandler} />
         )}
-      </MainCounter>
-      <MainCounter>
+      </MainCounter> */}
+      {/* <MainCounter>
         {(count, clickHandler) => (
           <HoverCounterTwo count={count} clickHandler={clickHandler} />
         )}
-      </MainCounter>
+      </MainCounter> */}
       {/* <ClickCounterTwo />
       <HoverCounterTwo /> */}
       {/* <ClickCounter name="Jayaprakash" />
